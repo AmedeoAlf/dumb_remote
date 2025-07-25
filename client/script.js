@@ -1,7 +1,6 @@
-const mainCard = document.getElementById("main-card");
 document.getElementById("fs-button").addEventListener(
   "click",
-  () => mainCard.requestFullscreen(),
+  () => document.getElementById("main-card").requestFullscreen(),
 );
 
 let server;
@@ -9,20 +8,18 @@ let server;
 function buildServer() {
   server = new WebSocket("/ws");
 
-  server.addEventListener("open", (ev) => {
+  server.addEventListener("open", () => {
     setConnectionIndicator("green", "Connected");
   });
 
   server.addEventListener("close", (ev) => {
     setConnectionIndicator("red", `Disconnected (${ev.code}) - reconnecting`);
     const tryConnection = () => {
-      console.log("Retrying");
       switch (server.readyState) {
         case WebSocket.OPEN:
           break;
         case WebSocket.CLOSING:
         case WebSocket.CLOSED:
-          console.log("fr");
           buildServer();
         case WebSocket.OPENING:
           setTimeout(tryConnection(), 100);
