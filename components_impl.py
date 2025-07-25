@@ -1,5 +1,5 @@
 import uinput
-from components import Scrollable
+from scrollable import Scrollable
 
 LMB = uinput.BTN_LEFT
 RMB = uinput.BTN_RIGHT
