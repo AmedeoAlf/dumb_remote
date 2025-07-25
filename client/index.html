@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title></title>
+  <link href="style.css" rel="stylesheet">
+  <!-- <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script> -->
+  <script src="tailwind.js"></script>
+</head>
+
+<body class="w-screen bg-blue-950 flex items-center justify-center p-5 flex-col gap-3 select-none high touch-none">
+  <div class="flex w-full items-center">
+    <h1 class="text-white text-center text-4xl font-bold w-full">Dumb remote</h1>
+    <button id="fs-button"
+      class="bg-blue-100 active:bg-blue-200 w-11 h-8 rounded-sm flex items-center justify-center select-none">
+      <svg width="20" height="20" viewBox="0.32820561 0.32820562 4.63 4.63">
+        <path
+          d="M 0.32820561 0.32820562 L 0.74781824 1.9002027 L 1.136425 1.5115959 L 2.2702059 2.6453768 L 1.136425 3.7791578 L 0.74781824 3.390551 L 0.32820561 4.9630648 L 1.9002027 4.5429354 L 1.5115959 4.1543287 L 2.6453768 3.0205477 L 3.7791577 4.1543287 L 3.390551 4.5429354 L 4.9630648 4.9630648 L 4.5429354 3.390551 L 4.1543286 3.7791578 L 3.0205477 2.6453768 L 4.1543286 1.5115959 L 4.5429354 1.9002027 L 4.9630648 0.32820562 L 3.390551 0.74781825 L 3.7791577 1.136425 L 2.6453768 2.2702059 L 1.5115959 1.136425 L 1.9002027 0.74781825 L 0.32820561 0.32820562 z " />
+      </svg>
+    </button>
+  </div>
+  <div id="main-card" class="bg-white p-3 rounded-sm w-screen h-200 max-w-150 max-h-150 flex flex-col gap-2">
+    <div id="connection-indicator" class="w-full flex items-center gap-2">
+      <div class="state-color rounded-full w-5 h-5 inline-block" style="background-color: red;"></div>
+      <div class="state-label">...</div>
+    </div>
+    <div class="w-full h-full flex items-center justify-center gap-2">
+      <button id="touchpad" class="bg-blue-100 rounded-sm w-full h-full select-none">
+        Scroll here
+      </button>
+      <button id="mousewheel" class="bg-blue-100 rounded-sm h-full w-40 max-w-1/2 select-none">
+        Mousewheel
+      </button>
+    </div>
+    <div class="flex flex-row gap-2">
+      <button id="lmb" class="w-1/2 h-20 bg-blue-100 active:bg-blue-200 rounded-sm select-none">Left click</button>
+      <button id="rmb" class="w-1/2 h-20 bg-blue-100 active:bg-blue-200 rounded-sm select-none">Right click</button>
+    </div>
+    <p id="debug"></p>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>

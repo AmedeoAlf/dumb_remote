@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="17.519077"
+   height="17.519077"
+   viewBox="0 0 4.6352559 4.6352558"
+   version="1.1"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25" />
+  <defs
+     id="defs1">
+    <marker
+       style="overflow:visible"
+       id="marker2"
+       refX="0"
+       refY="0"
+       orient="auto-start-reverse"
+       markerWidth="0.5"
+       markerHeight="0.5"
+       viewBox="0 0 1 1"
+       preserveAspectRatio="xMidYMid">
+      <path
+         transform="scale(0.5)"
+         style="fill:context-stroke;fill-rule:evenodd;stroke:context-stroke;stroke-width:1pt"
+         d="M 5.77,0 -2.88,5 V -5 Z"
+         id="path2" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="Triangle"
+       refX="0"
+       refY="0"
+       orient="auto-start-reverse"
+       markerWidth="0.5"
+       markerHeight="0.5"
+       viewBox="0 0 1 1"
+       preserveAspectRatio="xMidYMid">
+      <path
+         transform="scale(0.5)"
+         style="fill:context-stroke;fill-rule:evenodd;stroke:context-stroke;stroke-width:1pt"
+         d="M 5.77,0 -2.88,5 V -5 Z"
+         id="path135" />
+    </marker>
+  </defs>
+  <g
+     id="layer1"
+     transform="translate(-0.32820561,-0.32820562)">
+    <path
+       id="path27"
+       style="baseline-shift:baseline;display:inline;overflow:visible;vector-effect:none;stroke-linecap:round;enable-background:accumulate;stop-color:#000000;stop-opacity:1"
+       d="M 0.32820561 0.32820562 L 0.74781824 1.9002027 L 1.136425 1.5115959 L 2.2702059 2.6453768 L 1.136425 3.7791578 L 0.74781824 3.390551 L 0.32820561 4.9630648 L 1.9002027 4.5429354 L 1.5115959 4.1543287 L 2.6453768 3.0205477 L 3.7791577 4.1543287 L 3.390551 4.5429354 L 4.9630648 4.9630648 L 4.5429354 3.390551 L 4.1543286 3.7791578 L 3.0205477 2.6453768 L 4.1543286 1.5115959 L 4.5429354 1.9002027 L 4.9630648 0.32820562 L 3.390551 0.74781825 L 3.7791577 1.136425 L 2.6453768 2.2702059 L 1.5115959 1.136425 L 1.9002027 0.74781825 L 0.32820561 0.32820562 z " />
+  </g>
+</svg>
