@@ -59,8 +59,4 @@ function broadcastEvents(id, events, overrideId) {
   );
 }
 
-broadcastScrollEvents("mousewheel", ["touchmove", "touchstart"]);
-broadcastScrollEvents("touchpad", ["touchmove", "touchstart"]);
-broadcastEvents("rmb", ["touchstart", "touchend"]);
-broadcastEvents("lmb", ["touchstart", "touchend"]);
-broadcastEvents("touchpad", ["click"], "lmb");
+/*EVENTLIST*/

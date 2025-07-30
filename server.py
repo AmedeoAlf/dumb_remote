@@ -21,7 +21,7 @@ async def websocketConnection(request):
                 await ws.close()
             else:
                 commands = msg.data.split()
-                components[commands[0]](commands)
+                components[commands[0]][commands[1]](commands)
         elif msg.type == WSMsgType.ERROR:
             print('ws connection closed with exception %s' %
                   ws.exception())
