@@ -14,7 +14,7 @@ pyautogui), which I didn't use due to it not working on Hyprland.
 Since this isn't portable, all platform specific code (uinput) lives inside
 `components_impl.py`; porting to another library is just a matter of
 reimplementing `set_btn()`, `Touchpad._rel_move()`, `Mousewheel._rel_move()` and
-setting `LMB`, `RMB`.
+`click()`.
 
 ## Dependencies
 
@@ -30,6 +30,14 @@ sudo modprobe uinput
 ```
 
 ## Usage
+
+Generate the JS code for the components
+
+```sh
+python build_templates.py
+```
+
+Run the HTTP + WS server
 
 ```sh
 python server.py
