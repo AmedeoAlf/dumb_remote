@@ -68,5 +68,3 @@ for ev in events:
         components[c] = components.get(c, {})
         for (event, handler) in ev.handler.items():
             components[c][event] = handler
-
-print(components)

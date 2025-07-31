@@ -1,4 +1,6 @@
 from aiohttp import web, WSMsgType
+from qrcode import QRCode
+import socket
 from components import components
 
 app = web.Application()
@@ -28,6 +30,11 @@ async def websocketConnection(request):
 
     print('websocket connection closed')
     return ws
+
+qr = QRCode()
+qr.add_data(
+    f"http://{socket.gethostbyname_ex(socket.gethostname())[-1][0]}:8080")
+qr.print_tty()
 
 app.router.add_get("/{tail:.*}", serveFile)
 app.router.add_get("/ws", websocketConnection)
